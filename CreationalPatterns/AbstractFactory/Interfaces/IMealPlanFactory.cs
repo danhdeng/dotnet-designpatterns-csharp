@@ -1,6 +1,6 @@
-namespace CreationalPatterns.AbstractFactory;
+namespace CreationalPatterns.AbstractFactory.Interfaces;
 
-public interface IMenuPlanFactory {
+public interface IMealPlanFactory {
     public IMenu GenerateLunchesMenu();
     public IMenu GenerateDessertsMenu();
 

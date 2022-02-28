@@ -1,4 +1,4 @@
-namespace CreationalPatterns.AbstractFactory;
+namespace CreationalPatterns.AbstractFactory.Interfaces;
 
 public interface IMenu {
     public void PrintDescription();

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RealisticDependencies.Provider;
 
-    interface ISendMails
+    public interface ISendMails
     {
     public Task SendMessage(EmailMessage message);
     }

@@ -1,5 +1,5 @@
 using System;
-using CreationalPatterns.AbstractFactory;
+using CreationalPatterns.AbstractFactory.Interfaces;
 namespace CreationalPatterns.AbstractFactory.MealPlans.Keto;
 
 public class KetoShoppingList : IShoppingList

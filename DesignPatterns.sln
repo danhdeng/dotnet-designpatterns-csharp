@@ -1,25 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralPatterns", "BehavioralPatterns\BehavioralPatterns.csproj", "{A8C0E3D1-8213-477A-A63F-42641804AAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehavioralPatterns", "BehavioralPatterns\BehavioralPatterns.csproj", "{A8C0E3D1-8213-477A-A63F-42641804AAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalPatterns", "CreationalPatterns\CreationalPatterns.csproj", "{4CADDA19-A061-4674-9723-2DC434BB7129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreationalPatterns", "CreationalPatterns\CreationalPatterns.csproj", "{4CADDA19-A061-4674-9723-2DC434BB7129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealisticDependencies", "RealisticDependencies\RealisticDependencies.csproj", "{AE2A4E8C-1257-4F58-9005-DAB99911962C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealisticDependencies", "RealisticDependencies\RealisticDependencies.csproj", "{AE2A4E8C-1257-4F58-9005-DAB99911962C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralPatterns", "StructuralPatterns\StructuralPatterns.csproj", "{905F7E3D-1651-42F4-BD93-D34AD7895567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralPatterns", "StructuralPatterns\StructuralPatterns.csproj", "{905F7E3D-1651-42F4-BD93-D34AD7895567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{9218F3FC-F790-4F1E-965D-5784FBEC7776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "tests\Tests.csproj", "{9218F3FC-F790-4F1E-965D-5784FBEC7776}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A8C0E3D1-8213-477A-A63F-42641804AAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +39,11 @@ Global
 		{9218F3FC-F790-4F1E-965D-5784FBEC7776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9218F3FC-F790-4F1E-965D-5784FBEC7776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9218F3FC-F790-4F1E-965D-5784FBEC7776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86C60BFC-4F10-470C-8A3F-D9472334A469}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,8 @@ namespace RealisticDependencies.API;
 
 public class RecipesApi : IRecipesApi {
     private readonly Dictionary<string, Recipe> _database;
-    private readonly object _logger;
+
+    public IApplicationLogger _logger { get; }
 
     public RecipesApi(IApplicationLogger logger) {
         _database = GenerateDatabase();
@@ -17,7 +18,7 @@ public class RecipesApi : IRecipesApi {
 
     public async Task<string> MakeHttpRequestForRecipe(string recipe)
     {
-        _logger.logInfo($"Making HTTP request returning XML for: {recipe}", ConsoleColor.Magenta);
+        _logger.LogInfo($"Making HTTP request returning XML for: {recipe}", ConsoleColor.Magenta);
 
         await Task.Delay(2000);
 

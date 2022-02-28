@@ -17,7 +17,7 @@ public class Database : IDatabase
 
     public async Task Connect()
     {
-        await Task.Delay(3000);
+        await Task.Delay(1000);
         _isConnected = true;
         _logger.LogInfo($"{DateTime.UtcNow} - Connected to Database.", ConsoleColor.Magenta);
     }

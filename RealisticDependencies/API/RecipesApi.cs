@@ -34,9 +34,9 @@ public class RecipesApi : IRecipesApi {
     {
         return new()
         {
-            { "mashed_potatoes", new Recipe("mashed_potatoes", 30) },
-            { "green_beans", new Recipe("green_beans", 10) },
-            { "red_curry", new Recipe("red_curry", 60) },
+            { "mashed_potatoes", new Recipe("Mashed Potatoes", 30) },
+            { "green_beans", new Recipe("Steamed Green Beans", 10) },
+            { "red_curry", new Recipe("Red Curry", 60) },
 
         };
     }

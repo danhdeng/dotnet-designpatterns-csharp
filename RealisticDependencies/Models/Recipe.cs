@@ -8,6 +8,6 @@ public struct Recipe
     }
 
     public object Name { get;set; }
-    public int PrepTimeInMinutes { get; private set; }
+    public int PrepTimeInMinutes { get; set; }
 }
 

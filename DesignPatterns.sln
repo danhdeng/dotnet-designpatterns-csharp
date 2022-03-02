@@ -15,6 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "tests\Tests.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExamplePrograms", "ExamplePrograms", "{5BE99C99-A4DB-4934-9121-9FD8C68F09EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{1BE7C956-2184-44B4-8BCD-63332B768950}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehavioralExamples", "BehavioralExamples", "{53E56EBF-5713-4E40-88E4-0FDC9441F13F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestRestaurantFinder", "BestRestaurantFinder\BestRestaurantFinder.csproj", "{193DB11A-70D0-436D-B943-D34E4AC33DD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,9 +47,17 @@ Global
 		{9218F3FC-F790-4F1E-965D-5784FBEC7776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9218F3FC-F790-4F1E-965D-5784FBEC7776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9218F3FC-F790-4F1E-965D-5784FBEC7776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193DB11A-70D0-436D-B943-D34E4AC33DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193DB11A-70D0-436D-B943-D34E4AC33DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193DB11A-70D0-436D-B943-D34E4AC33DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193DB11A-70D0-436D-B943-D34E4AC33DD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53E56EBF-5713-4E40-88E4-0FDC9441F13F} = {1BE7C956-2184-44B4-8BCD-63332B768950}
+		{193DB11A-70D0-436D-B943-D34E4AC33DD4} = {53E56EBF-5713-4E40-88E4-0FDC9441F13F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86C60BFC-4F10-470C-8A3F-D9472334A469}

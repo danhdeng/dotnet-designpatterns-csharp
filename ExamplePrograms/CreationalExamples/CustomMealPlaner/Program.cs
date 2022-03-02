@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using RealisticDependencies.Logger;
+
+namespace CustomMealPlaner;
+
+internal class Program { 
+    private static async Task Main(string[] vs) { 
+        var logger=new ConsoleLogger();
+    }        
+    
+}

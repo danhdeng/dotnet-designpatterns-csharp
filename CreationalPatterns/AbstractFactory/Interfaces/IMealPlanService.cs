@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CreationalPatterns.AbstractFactory.Interfaces;
 
-interface IMealPlanService
+public interface IMealPlanService
 {
     public Task SendMealPlanToSubscriber(string customerEmail);
 }

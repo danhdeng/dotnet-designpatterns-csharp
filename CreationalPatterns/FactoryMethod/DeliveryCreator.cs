@@ -11,7 +11,7 @@ namespace CreationalPatterns.FactoryMethod;
 
 public abstract class DeliveryCreateor {
     private readonly IAmqpQueue _deliveryQueue;
-    private readonly IApplicationLogger _logger;
+    protected readonly IApplicationLogger _logger;
 
     public DeliveryCreateor() { }
 

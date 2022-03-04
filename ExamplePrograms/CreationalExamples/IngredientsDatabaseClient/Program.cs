@@ -28,9 +28,12 @@ internal class Program {
         await northClient.Disconnect();
         await southClient.Connect(SouthClientId);
 
-        await eastClient.Disconnect();
-        await westClient.Disconnect();
-        await southClient.Disconnect();
+        //await eastClient.Disconnect();
+        //await westClient.Disconnect();
+        //await southClient.Disconnect();
+        await northClient.Disconnect();
+        await northClient.Disconnect();
+        await northClient.Disconnect();
         await northClient.Disconnect();
 
         Console.WriteLine("...... Sesesion complete!");

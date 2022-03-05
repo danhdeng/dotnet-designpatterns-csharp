@@ -2,7 +2,7 @@ using CreationalPatterns.Builder.Models;
 
 namespace CreationalPatterns.Builder.Interfaces;
 
-public interface IBuilderPurchaseOrders {
+public interface IBuildsPurchaseOrders {
     void SetId();
     void SetCompany();
     void SetAddress();

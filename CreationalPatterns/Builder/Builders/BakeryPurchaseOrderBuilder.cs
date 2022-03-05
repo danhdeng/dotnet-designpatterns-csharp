@@ -3,7 +3,7 @@ using CreationalPatterns.Builder.Models;
 
 namespace CreationalPatterns.Builder.Builders;
 
-public class BakeryPurchaseOrderBuilder : IBuilderPurchaseOrders
+public class BakeryPurchaseOrderBuilder : IBuildsPurchaseOrders
 {
     private string _id;
     private string _companyName;

@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CreationalPatterns\CreationalPatterns.csproj" />
+    <ProjectReference Include="..\..\..\RealisticDependencies\RealisticDependencies.csproj" />
+  </ItemGroup>
+
 </Project>

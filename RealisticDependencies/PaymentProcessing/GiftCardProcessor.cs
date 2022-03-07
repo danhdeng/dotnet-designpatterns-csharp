@@ -1,6 +1,6 @@
 namespace RealisticDependencies.PaymentProcessing;
 
-public class GiftCardPaymentPrcoessor : IProcessesPayments
+public class GiftCardPrcoessor : IProcessesPayments
 {
     public string HandlePayment(decimal paymentAmount)
     {

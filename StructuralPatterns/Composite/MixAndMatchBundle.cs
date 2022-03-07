@@ -3,7 +3,8 @@ using RealisticDependencies.Logger;
 
 namespace StructualPatterns.Composition;
 
-public class MixAndMaxBundle : TeaCarton {
+public class MixAndMaxBundle : TeaCarton
+{
     protected List<TeaCarton> SubCartons = new();
     private readonly IApplicationLogger _logger;
 
@@ -11,7 +12,7 @@ public class MixAndMaxBundle : TeaCarton {
     {
         _logger = logger;
     }
- 
+
     public override void Add(TeaCarton carton)
     {
         _logger.LogInfo($"Adding  a carton of {carton} to the MixAndMathcnBundle");
@@ -20,8 +21,10 @@ public class MixAndMaxBundle : TeaCarton {
 
     public virtual void BuildBundle(Dictionary<TeaCarton, int> order)
     {
-        foreach (var (teaCarton, quantity) in order) {
-            for (var i = 0; i < quantity; i++) {
+        foreach (var (teaCarton, quantity) in order)
+        {
+            for (var i = 0; i < quantity; i++)
+            {
                 SubCartons.Add(teaCarton);
             }
         }
@@ -35,7 +38,8 @@ public class MixAndMaxBundle : TeaCarton {
     }
 
 
-    public override int GetNumberOfServings()=> SubCartons.Sum(carton=> carton.GetNumberOfServings());  
+    public override int GetNumberOfServings() => SubCartons.Sum(carton => carton.GetNumberOfServings());
 
 
     public override bool ContainsSubCarton() => false;
+}

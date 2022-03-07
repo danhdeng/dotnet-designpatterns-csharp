@@ -60,10 +60,5 @@ internal class Program {
         booth4.ProcessCustomerPayment(11.00m, pleasantValley);
 
         booth5.ProcessCustomerPayment(5.00m, hillsideRanch);
-
-
-
-
-
     }
 }

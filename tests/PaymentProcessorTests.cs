@@ -10,7 +10,7 @@ public class PaymentProcessingTests {
     [InlineData(-23d)]
     [InlineData(3498d)]
     public void GiftCardProcess_HandlePayment_Returns_Amount_In_Some_String(decimal amount) {
-        var gcProcessor = new GiftCardPaymentPrcoessor();
+        var gcProcessor = new GiftCardPrcoessor();
         var response = gcProcessor.HandlePayment(amount);
         response.Should().Contain(amount.ToString());
         response.ToLower().Should().Contain("gift card");
@@ -18,7 +18,7 @@ public class PaymentProcessingTests {
 
     public void CreditCardProcess_HandlePayment_Returns_Amount_In_Some_String(decimal amount)
     {
-        var ccProcessor = new GiftCardPaymentPrcoessor();
+        var ccProcessor = new GiftCardPrcoessor();
         var response = ccProcessor.HandlePayment(amount);
         response.Should().Contain(amount.ToString());
         response.ToLower().Should().Contain("credit card");

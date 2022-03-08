@@ -16,7 +16,7 @@ public class ConsoleLogger:IApplicationLogger{
     }
 
     public void LogError(string message) {
-        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.ForegroundColor = ConsoleColor.Red;
         Write(message);
     }
 

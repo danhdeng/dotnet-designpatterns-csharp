@@ -1,5 +1,5 @@
 namespace StructualPatterns.Decorator;
 
-public abstract class Notifer {
+public abstract class Notifier {
     public abstract Task HandleTableReadyMessage();
 }

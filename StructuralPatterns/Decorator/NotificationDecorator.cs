@@ -1,9 +1,9 @@
 namespace StructualPatterns.Decorator;
 
-public abstract class NotificationDecorator : Notifer {
-    protected Notifer Component;
+public abstract class NotificationDecorator : Notifier {
+    protected Notifier Component;
 
-    public NotificationDecorator(Notifer component) { 
+    public NotificationDecorator(Notifier component) { 
         Component = component;
     }
 

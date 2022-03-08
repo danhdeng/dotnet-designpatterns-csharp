@@ -7,7 +7,7 @@ namespace StructuralPatterns.Decorator.Decorators;
     {
         private readonly ISendMails _mailer;
 
-        public EmailMessageDecorator(Notifer component, ISendMails emailer):base(component) {
+        public EmailMessageDecorator(Notifier component, ISendMails emailer):base(component) {
             _mailer = emailer;
         }
 

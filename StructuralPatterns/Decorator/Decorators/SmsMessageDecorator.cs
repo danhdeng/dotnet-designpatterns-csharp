@@ -14,7 +14,7 @@ namespace StructuralPatterns.Decorator.Decorators
     {
         private readonly IAmqpQueue _queue;
 
-        public SmsMessageDecorator(Notifer component, IAmqpQueue queue) : base(component) {
+        public SmsMessageDecorator(Notifier component, IAmqpQueue queue) : base(component) {
             _queue = queue;
         }
 

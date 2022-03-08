@@ -1,6 +1,6 @@
 namespace StructualPatterns.Decorator;
 
-public abstract class RestraurantIntercomNotifer : Notifer
+public class RestraurantIntercomNotifier : Notifier
 {
 
     public override Task HandleTableReadyMessage() { 

@@ -4,5 +4,5 @@ public interface IVendorNotifier
 {
     Task NotifyVendorOfCurrentStock(string vendor);
 
-    List<string> GetVendorForDepartment(string dept);
+    List<string> GetVendorsForDepartment(string dept);
 }

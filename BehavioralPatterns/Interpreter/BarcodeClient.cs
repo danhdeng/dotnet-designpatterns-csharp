@@ -1,6 +1,7 @@
+using BehavioralPatterns.Interpreter.Expressions;
 using RealisticDependencies.Logger;
 
-namespace BehavioralPatterns.Interpreter.Expressions;
+namespace BehavioralPatterns.Interpreter;
 
 public class BarcodeClient {
     private readonly IApplicationLogger _logger;

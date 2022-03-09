@@ -23,7 +23,7 @@ public class NewUserHandler {
 
     public void SignUpUser() {
         if (_onStart != null) {
-            _logger.LogInfo("RUnning pre-process hook", ConsoleColor.DarkMagenta);
+            _logger.LogInfo("Running pre-process hook", ConsoleColor.DarkMagenta);
             _onStart.Execute();
         }
         _logger.LogInfo("New user is signing up", ConsoleColor.DarkMagenta);

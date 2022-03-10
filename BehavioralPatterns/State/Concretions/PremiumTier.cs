@@ -19,10 +19,9 @@ public class PremiumTier : RewardsTier
         Initialize();
     }
 
-    public void Initialize()
-    {
-        AvailablePerks = new List<string> { "1 Free Coffee", "1 free Tea" };
-    }
+        private void Initialize() {
+            AvailablePerks = new List<string> {"1 Free Coffee", "1 Free Tea", "1 Free Latte", "1 Free Cappucino"};
+        }
 
     public override void OnPurchase(int points)
     {
@@ -38,7 +37,7 @@ public class PremiumTier : RewardsTier
 
     private void RefreshState()
     {
-        if (PointBalance > Configuration.MinPremiumPointsBalance)
+        if (PointBalance < Configuration.MinPremiumPointsBalance)
         {
             Account.RewardsTier = new BasicTier(this, _emailer);
         }

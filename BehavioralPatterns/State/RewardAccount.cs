@@ -6,7 +6,6 @@ namespace BehavioralPatterns.State;
 
 public class RewardsAccount {
     private readonly IApplicationLogger _logger;
-    private readonly ISendMails _emailer;
     private readonly string _patron;
     private readonly RewardsTier _state;
 
@@ -15,8 +14,8 @@ public class RewardsAccount {
         ISendMails emailer,
         string patron) {
         _logger = logger;
-        _emailer = emailer;
         _patron = patron;
+        RewardsTier = new BasicTier(0, this, emailer);
         _state = new BasicTier(RewardsTier, emailer);
     }
     public double PointBalance => _state.PointBalance;

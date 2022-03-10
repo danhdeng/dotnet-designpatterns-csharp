@@ -41,7 +41,7 @@ public class Subject : ISubject {
             Message = "EmailUpdate"
         };
 
-        _logger.LogInfo($"Subject: State has just changed: {State}");
+        _logger.LogInfo($"Subject: State has just changed: {State.Message} on {State.LastUpdated}");
         Thread.Sleep(500);
         Notify();
     }

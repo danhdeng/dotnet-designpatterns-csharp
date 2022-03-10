@@ -44,6 +44,6 @@ public class CartClient {
         _logger.LogInfo(string.Join("\n", 
             memoryDump.Select(
                 mem=> $"{mem.GetSnapshotDate()} | { mem.GetState()}")), 
-        ConsoleColor.DarkBlue);
+        ConsoleColor.Cyan);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using BehavioralPatterns.Interpreter;
 using RealisticDependencies.Logger;
 
-namespace ExamplePrograms.BehaviroalPrograms.ChocolateShopBarcodes;
+namespace ExamplePrograms.BehavioralPrograms.ChocolateShopBarcodes;
 
 internal class Program {
     private static void Main() {

@@ -3,7 +3,7 @@ using BehavioralPatterns.Command.Commands;
 using RealisticDependencies.Logger;
 using RealisticDependencies.Provider;
 
-namespace ExamplePrograms.BehaviroalPrograms.NeighborhoodComposterSignUpForm;
+namespace ExamplePrograms.BehavioralPrograms.NeighborhoodComposterSignUpForm;
 
 internal class Program {
     /// <summary>

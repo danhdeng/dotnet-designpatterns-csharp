@@ -35,7 +35,7 @@ public class FloristDataProcessor : IVisitable<Report>
         var orderId=Guid.NewGuid().ToString();
         await _database.WriteData(orderId, order.ToString());
     }
-    public List<decimal> GetDailyOrderAmount()
+    public List<decimal> GetDailyOrderAmounts()
     {
         var rng = new Random();
         var dailyOrders = new List<decimal>();

@@ -6,11 +6,11 @@ using RealisticDependencies.Provider;
 
 namespace BehavioralPatterns.Visitor.DataProcessors;
 
-public class BakerDataProcessor : IVisitable<Report> {
+public class BakeryDataProcessor : IVisitable<Report> {
     private readonly ISendMails _emailer;
     private readonly Database _database;
 
-    public BakerDataProcessor(ISendMails emailer,
+    public BakeryDataProcessor(ISendMails emailer,
         Database database
         ) {
         _emailer=emailer;
@@ -54,7 +54,7 @@ public class BakerDataProcessor : IVisitable<Report> {
         return dailyOrders;
     }
 
-    public List<Person> GetMonthlyGustomerProfiles() { 
+    public List<Person> GetMonthlyCustomerProfiles() { 
         var rng=new Random();
         var customers=new List<Person>();
         for (var i = 0; i < 1000; i++) {

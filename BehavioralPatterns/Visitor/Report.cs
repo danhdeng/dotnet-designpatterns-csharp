@@ -2,7 +2,7 @@ using RealisticDependencies.Logger;
 
 namespace BehavioralPatterns.Visitor {
     public abstract class Report {
-        private readonly IApplicationLogger _logger;
+        protected readonly IApplicationLogger _logger;
 
         public Report(IApplicationLogger logger) {
             _logger = logger;

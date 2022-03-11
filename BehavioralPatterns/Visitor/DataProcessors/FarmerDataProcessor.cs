@@ -35,7 +35,7 @@ public class FarmerDataProcessor : IVisitable<Report>
         }
     }
 
-    public List<decimal> GetDailyOrderAmount() { 
+    public List<decimal> GetDailyOrderAmounts() { 
         var rng=new Random();
         var dailyOrders=new List<decimal>();
         for(var i = 0; i < 1000; i++)

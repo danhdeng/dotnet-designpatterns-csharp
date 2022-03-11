@@ -70,7 +70,8 @@ public class BakerDataProcessor : IVisitable<Report> {
         return customers;   
     }
 
-    //public Report Accept(IVisitable<Report> visitor) {
-    //    return visitor.Visit(this);
-    //}
+    public Report Accept(IVisitor<Report> visitor)
+    {
+        return visitor.Visit(this);
+    }
 }

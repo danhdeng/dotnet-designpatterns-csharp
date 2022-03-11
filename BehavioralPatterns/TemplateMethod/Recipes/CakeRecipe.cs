@@ -1,6 +1,6 @@
 using RealisticDependencies.Logger;
 
-namespace BehavioralPatterns.TemplateMethod;
+namespace BehavioralPatterns.TemplateMethod.Recipes;
 
 public class CakeRecipe : CookBookRecipe {
     public CakeRecipe(IApplicationLogger logger) : base(logger) { }

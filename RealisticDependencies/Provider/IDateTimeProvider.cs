@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+namespace RealisticDependencies.Provider;
 
-namespace RealisticDependencies.Provider
+public interface IDateTimeProvider
 {
-    interface IDateTimeProvider
-    {
-        public DateTime CurrentUtc();
+    public DateTime CurrentUtc();
 
-        public bool IsMorning();
+    public bool IsMorning();
 
-        public bool IsAfternoon();
+    public bool IsAfternoon();
 
-        public bool IsEvening();
-        public bool IsLateNightEarlyMorning();
+    public bool IsEvening();
+    public bool IsLateNightEarlyMorning();
 
 
-    }
 }
